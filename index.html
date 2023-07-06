@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRClock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono" rel="stylesheet">
+</head>
+<body>
+    
+    <nav id="navbar">
+        
+        <img id="logo" src="./assets/imgs/drclock-blue.png" alt="">
+        <div id="opciones">
+            <button class="xopcion" id="set-count" type="button" onclick="setCountdown()">Cuenta regresiva</button>
+            <button class="xopcion" id="change-color-blue" type="button" onclick="colorChange(fondoAzul,cBlanco)">Fondo Azul</button>
+            <button class="xopcion" id="change-color-red" type="button" onclick="colorChange(fondoRojo,cBlanco)">Fondo Rojo</button>
+            <button class="xopcion" id="change-color-red" type="button" onclick="colorBlink()">Fondo Intermimente</button>
+        </div>    
+    </nav>
+
+<div id="container">
+    <div id="clock-container">
+        <p id="clock"></p>
+    </div>
+<div id="countdown-container">
+    <div id="count-button-container">
+        <button id="button-count">▶<br>Iniciar</button>
+        <button id="button-stop">■<br>Detener<br>/Reinicar</button>
+    </div>    
+    <div id="count-container">
+        <p id="res">Tiempo restante</p>
+        <p id="count">10:00</p>
+    </div>
+</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="./script.js"></script>
+</html>

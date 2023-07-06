@@ -1,0 +1,236 @@
+:root{
+--azul:#165fc6;
+--rojo:#9b0303;
+--gris:#333;
+--negro:#0f0f0f;
+--verde:#15d615;
+}
+
+/*Reglas copiadas para fondo de gradiente*/
+    
+    body{
+    background: #4d4dce;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3ac1b8, #2a6edb, #4d4dce, #9443e0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #3ac1b8, #2a6edb, #4d4dce, #9443e0);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+    html, body { /*BODY Y HTML full tamaño*/
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+   }
+
+/*ANIMACION DE GRADIENTES****/
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+}
+
+/*ANIMACION DE PARPADEO****/
+@keyframes parpadeo {
+    0% {
+      background-color: var(--rojo);
+    }
+    50% {
+      background-color:var(--negro);
+    }
+    100% {
+      background-color: var(--rojo);
+    }
+  }
+  
+
+#navbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 10vh;
+    padding:.3rem .8rem;
+    box-shadow: rgba(0, 0, 0,.1) 0.
+    inset 0 -.1rem;
+    transition: all ease-in-out .3s;
+    background: linear-gradient(90deg,#fff,#e6e6e6);
+}
+
+
+/*div que contiene los botones*/
+#opciones{
+    vertical-align: center;
+    display: inline-flex;
+    margin: 0 3em;
+    margin-top: .2em;
+    position: fixed;
+}
+
+
+.xopcion{
+    background-color: inherit;
+    color:var(--azul);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    font-family:'Montserrat', sans-serif;
+    margin:0 0.4em;
+    box-shadow: none;
+    border: 0.1em solid transparent;
+}
+
+.xopcion:hover{
+    background-color: transparent;
+    color: var(--azul);
+    border: 0.1em solid var(--azul);
+    overflow: hidden;
+    padding: 0.5em;
+    transition: .8s ease all;
+    font-family:'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+/*img que contiene el logo*/
+#logo{
+    align-self:flex-start;
+    width: 8em;
+    vertical-align: middle;
+    margin-right: 4em;
+    margin-top: .3em;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh;
+    flex-direction: column; 
+    /*border: 1px red solid;*/
+}
+
+/*Reglas para relojes div CONTENEDOR*/
+#clock-container{
+    width: auto;
+    display: flex;
+    font-family: consolas ,monospace;
+    color: #fcfcfc;
+    border-radius: 5rem;
+    /*border: 4px solid #f4f4f4;*/
+}
+
+#countdown-container{
+display: none;
+flex-direction: row;
+/*border:#9b0303 solid 2px;*/
+}
+
+#count-button-container{
+display: flex;
+flex-wrap: nowrap;
+flex-direction:column;
+align-self: center;
+align-items: center;
+justify-content: space-around;
+/*border:#07c110 solid 2px;*/
+}
+
+#count-container{
+    color: #fcfcfc ;
+    user-select: none;
+    text-align: center;
+    display: flex;
+    border: solid .1em #fcfcfc;
+    border-radius: 3em;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono';
+    margin-right: 1.2em;
+}
+
+#res {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: -.8em;
+    margin-top: .4em;
+}
+
+#button-count {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: var(--gris);
+    color:#fcfcfc;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 1.2em;
+    margin-left: 0;
+    margin-top: .6em;
+    margin-bottom: .6em;
+  }
+  
+  #button-count:hover{
+    overflow: hidden;
+    transform:scale(1.1);
+    background-color: transparent;
+    border: #fcfcfc solid 2px;
+    transition:.4s ease all;
+  }
+
+  #button-stop {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: var(--rojo);
+    color:#fcfcfc;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 1.2em;
+    margin-left: 0;
+    margin-top: .6em;
+    margin-bottom: .6em;
+  }
+  
+  #button-stop:hover{
+    overflow: hidden;
+    transform:scale(1.1);
+    background-color: transparent;
+    border: var(--rojo) solid 2px;
+    color: var(--rojo);
+    transition:.4s ease all;
+  }
+
+
+/*elemento p que se actualiza cada segundo*/
+#clock{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    color:#fcfcfc ;
+    font-size: 18vw;
+    margin: 0 .1em;
+    font-weight: 700;
+    
+}
+
+#count{
+    font-size: 16vw;
+    margin: 0 .2em;
+    padding: -1em;
+}
+
+
