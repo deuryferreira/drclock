@@ -11,5 +11,5 @@ Has some interesting options like
 3. Configurable Temporizer time
 4. Reset counter option
 
-Check below
+
 [Open DRClock](https://deuryferreira.github.io/drclock/)
