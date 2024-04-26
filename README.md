@@ -1,4 +1,4 @@
-# DRclock ⌚
+# DRClock ⌚
 ### Digital Clock and Temporizer made with vanilla Javascript!
 
 This project was very interesting to learn some concepts as manipulating DOM and using HTML, CSS and Javascript
