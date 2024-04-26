@@ -11,5 +11,8 @@ Has some interesting options like
 3. Configurable Temporizer time
 4. Reset counter option
 
+I will update the app using some JS framework and modern libraries in the future...
 
 [Open DRClock](https://deuryferreira.github.io/drclock/)
+
+
