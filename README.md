@@ -1,7 +1,7 @@
 # DRclock ⌚
 ### Digital Clock and Temporizer made with vanilla Javascript!
 
-Useful to learn some concepts as manipulating DOM and using HTML, CSS and Javascript
+This project was very interesting to learn some concepts as manipulating DOM and using HTML, CSS and Javascript
 Actually i made this simple app thinking about a solution for time management at church scenario or any other performance.
 
 Has some interesting options like
